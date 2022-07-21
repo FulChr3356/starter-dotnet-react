@@ -13,9 +13,10 @@ public class LoanApplicationController : ControllerBase
         _logger = logger;
     }
 
-    [HttpGet]
-    public LoanApplication Get()
+    [HttpPost]
+    public LoanApplication Post()
     {
-      return new LoanApplication();
+      LoanApplication = new LoanApplication();  
+      return LoanApplication.processApplication();
     }
 }
