@@ -1,6 +1,6 @@
 namespace starter_dotnet_react;
 
-public class LoanApplication {
+public class LoanApplication   : IApplication{
 
     public LoanApplication(){
         status = "In Progress";
